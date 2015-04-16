@@ -12,15 +12,15 @@ var curr = 2;
 var primes = [];
 
 while (primes.length < 10001){
-	var prime = true;
-	for (var k = 2; k < curr; k++){
-		if ( curr%k === 0 && curr != k){
-			prime = false;
-			break;
-		}
-	}
-	if (prime) primes.push(curr);
-	curr++;
+  var prime = true;
+  for (var k = 2; k < curr; k++){
+    if ( curr%k === 0 && curr != k){
+      prime = false;
+      break;
+    }
+  }
+  if (prime) primes.push(curr);
+  curr++;
 }
 
 console.log('The 10,001st prime number is ' + primes[primes.length-1]);
